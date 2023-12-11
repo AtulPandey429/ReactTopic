@@ -526,7 +526,7 @@ const Messages: FunctionComponent = () => {
           <SearchFormContainer />
         </div>
       </div>
-      <IconOnlyFalseDefaultFalse
+      {/* {<IconOnlyFalseDefaultFalse
         logoIcon="/logo-icon.svg"
         alignLeft="/alignleft.svg"
         navIcon="/nav-icon.svg"
@@ -675,7 +675,7 @@ const Messages: FunctionComponent = () => {
         eMailLineHeight="1rem"
         logOutIconWidth="1.06rem"
         logOutIconHeight="1.06rem"
-      />
+      />} */}
     </div>
   );
 };
