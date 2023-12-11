@@ -1,0 +1,55 @@
+.nav-icon {
+  position: relative;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.notifications {
+  position: relative;
+  font-weight: 500;
+}
+.title {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.div1 {
+  position: relative;
+  line-height: 18px;
+}
+.update-count {
+  border-radius: 6px;
+  background-color: #f9fafb;
+  border: 1px solid #eaecf0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 4px;
+  color: #344054;
+}
+.chevron-down-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.statedefault-icon-onlyno {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 8px;
+  gap: 8px;
+  text-align: left;
+  font-size: 14px;
+  color: #101828;
+  font-family: Inter;
+}

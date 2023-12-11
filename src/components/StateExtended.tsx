@@ -1,10 +1,11 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import StateDefaultIconOnlyNo from "./StateDefaultIconOnlyNo";
+import NavItemNavDropdownItem from "./NavItemNavDropdownItem";
+import "./StateExtended.css";
 
 type StateExtendedType = {
   navIcon?: string;
   chevronUp?: string;
-  updateCount?: boolean;
-  dropdown?: boolean;
 
   /** Style props */
   stateExtendedWidth?: CSSProperties["width"];
@@ -41,6 +42,7 @@ type StateExtendedType = {
   membersFontSize1?: CSSProperties["fontSize"];
   membersLineHeight1?: CSSProperties["lineHeight"];
   membersWidth1?: CSSProperties["width"];
+  membersFontWeight?: CSSProperties["fontWeight"];
   navItemNavDropdownItemPadding2?: CSSProperties["padding"];
   navItemNavDropdownItemGap2?: CSSProperties["gap"];
   frameDivWidth4?: CSSProperties["width"];
@@ -51,7 +53,6 @@ type StateExtendedType = {
   membersFontSize2?: CSSProperties["fontSize"];
   membersLineHeight2?: CSSProperties["lineHeight"];
   membersWidth2?: CSSProperties["width"];
-  membersFontWeight?: CSSProperties["fontWeight"];
 };
 
 const StateExtended: FunctionComponent<StateExtendedType> = ({
@@ -91,6 +92,7 @@ const StateExtended: FunctionComponent<StateExtendedType> = ({
   membersFontSize1,
   membersLineHeight1,
   membersWidth1,
+  membersFontWeight,
   navItemNavDropdownItemPadding2,
   navItemNavDropdownItemGap2,
   frameDivWidth4,
@@ -101,9 +103,6 @@ const StateExtended: FunctionComponent<StateExtendedType> = ({
   membersFontSize2,
   membersLineHeight2,
   membersWidth2,
-  membersFontWeight,
-  updateCount,
-  dropdown,
 }) => {
   const stateExtendedStyle: CSSProperties = useMemo(() => {
     return {
@@ -112,75 +111,75 @@ const StateExtended: FunctionComponent<StateExtendedType> = ({
     };
   }, [stateExtendedWidth, stateExtendedGap]);
 
-  const navItem6Style: CSSProperties = useMemo(() => {
+  const stateDefaultIconOnlyNoStyle: CSSProperties = useMemo(() => {
     return {
       padding: navItemPadding,
       gap: navItemGap,
     };
   }, [navItemPadding, navItemGap]);
 
-  const title6Style: CSSProperties = useMemo(() => {
+  const title1Style: CSSProperties = useMemo(() => {
     return {
       width: titleWidth,
       gap: titleGap,
     };
   }, [titleWidth, titleGap]);
 
-  const navIcon6Style: CSSProperties = useMemo(() => {
+  const navIcon1Style: CSSProperties = useMemo(() => {
     return {
       width: navIconWidth,
       height: navIconHeight,
     };
   }, [navIconWidth, navIconHeight]);
 
-  const notifications6Style: CSSProperties = useMemo(() => {
+  const notifications1Style: CSSProperties = useMemo(() => {
     return {
       fontSize: notificationsFontSize,
     };
   }, [notificationsFontSize]);
 
-  const updateCount6Style: CSSProperties = useMemo(() => {
+  const updateCount1Style: CSSProperties = useMemo(() => {
     return {
       padding: updateCountPadding,
     };
   }, [updateCountPadding]);
 
-  const div6Style: CSSProperties = useMemo(() => {
+  const div1Style: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize,
       lineHeight: divLineHeight,
     };
   }, [divFontSize, divLineHeight]);
 
-  const chevronUpIcon1Style: CSSProperties = useMemo(() => {
+  const chevronDownIconStyle: CSSProperties = useMemo(() => {
     return {
       width: chevronUpIconWidth,
       height: chevronUpIconHeight,
     };
   }, [chevronUpIconWidth, chevronUpIconHeight]);
 
-  const navItemNavDropdownItem3Style: CSSProperties = useMemo(() => {
+  const navItemNavDropdownItemStyle: CSSProperties = useMemo(() => {
     return {
       padding: navItemNavDropdownItemPadding,
       gap: navItemNavDropdownItemGap,
     };
   }, [navItemNavDropdownItemPadding, navItemNavDropdownItemGap]);
 
-  const frameDiv8Style: CSSProperties = useMemo(() => {
+  const frameDivStyle: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth,
       height: frameDivHeight,
     };
   }, [frameDivWidth, frameDivHeight]);
 
-  const frameDiv9Style: CSSProperties = useMemo(() => {
+  const frameDiv1Style: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth1,
       height: frameDivHeight1,
     };
   }, [frameDivWidth1, frameDivHeight1]);
 
-  const members3Style: CSSProperties = useMemo(() => {
+  const membersStyle: CSSProperties = useMemo(() => {
     return {
       color: membersColor,
       fontSize: membersFontSize,
@@ -189,172 +188,144 @@ const StateExtended: FunctionComponent<StateExtendedType> = ({
     };
   }, [membersColor, membersFontSize, membersLineHeight, membersWidth]);
 
-  const navItemNavDropdownItem4Style: CSSProperties = useMemo(() => {
+  const navItemNavDropdownItemStyle1: CSSProperties = useMemo(() => {
     return {
       padding: navItemNavDropdownItemPadding1,
       gap: navItemNavDropdownItemGap1,
     };
   }, [navItemNavDropdownItemPadding1, navItemNavDropdownItemGap1]);
 
-  const frameDiv10Style: CSSProperties = useMemo(() => {
+  const frameDivStyle1: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth2,
       height: frameDivHeight2,
     };
   }, [frameDivWidth2, frameDivHeight2]);
 
-  const frameDiv11Style: CSSProperties = useMemo(() => {
+  const frameDiv1Style1: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth3,
       height: frameDivHeight3,
     };
   }, [frameDivWidth3, frameDivHeight3]);
 
-  const members4Style: CSSProperties = useMemo(() => {
+  const membersStyle1: CSSProperties = useMemo(() => {
     return {
       color: membersColor1,
       fontSize: membersFontSize1,
       lineHeight: membersLineHeight1,
       width: membersWidth1,
+      fontWeight: membersFontWeight,
     };
-  }, [membersColor1, membersFontSize1, membersLineHeight1, membersWidth1]);
+  }, [
+    membersColor1,
+    membersFontSize1,
+    membersLineHeight1,
+    membersWidth1,
+    membersFontWeight,
+  ]);
 
-  const navItemNavDropdownItem5Style: CSSProperties = useMemo(() => {
+  const navItemNavDropdownItemStyle2: CSSProperties = useMemo(() => {
     return {
       padding: navItemNavDropdownItemPadding2,
       gap: navItemNavDropdownItemGap2,
     };
   }, [navItemNavDropdownItemPadding2, navItemNavDropdownItemGap2]);
 
-  const frameDiv12Style: CSSProperties = useMemo(() => {
+  const frameDivStyle2: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth4,
       height: frameDivHeight4,
     };
   }, [frameDivWidth4, frameDivHeight4]);
 
-  const frameDiv13Style: CSSProperties = useMemo(() => {
+  const frameDiv1Style2: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth5,
       height: frameDivHeight5,
     };
   }, [frameDivWidth5, frameDivHeight5]);
 
-  const members5Style: CSSProperties = useMemo(() => {
+  const membersStyle2: CSSProperties = useMemo(() => {
     return {
       color: membersColor2,
       fontSize: membersFontSize2,
       lineHeight: membersLineHeight2,
       width: membersWidth2,
-      fontWeight: membersFontWeight,
     };
-  }, [
-    membersColor2,
-    membersFontSize2,
-    membersLineHeight2,
-    membersWidth2,
-    membersFontWeight,
-  ]);
+  }, [membersColor2, membersFontSize2, membersLineHeight2, membersWidth2]);
 
   return (
-    <div
-      className="flex flex-col items-start justify-start gap-[6px] text-left text-sm text-colors-text-title-primary-text font-inter-body-14-semibold"
-      style={stateExtendedStyle}
-    >
-      <div
-        className="rounded-border-radius-radius-8 bg-color-gray-50 flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 gap-[8px] border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-        style={navItem6Style}
-      >
-        <div
-          className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-          style={title6Style}
-        >
-          <img
-            className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-            alt=""
-            src={navIcon}
-            style={navIcon6Style}
-          />
-          <div className="relative font-medium" style={notifications6Style}>
-            Analytics
-          </div>
-        </div>
-        <div
-          className="rounded-border-radius-radius-6 bg-color-gray-25 hidden flex-col items-start justify-start py-0.5 px-1 text-colors-text-title-secondary-text border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-          style={updateCount6Style}
-        >
-          <div className="relative leading-[18px]" style={div6Style}>
-            10
-          </div>
-        </div>
-        <img
-          className="relative w-6 h-6 overflow-hidden shrink-0"
-          alt=""
-          src={chevronUp}
-          style={chevronUpIcon1Style}
+    <div className="stateextended" style={stateExtendedStyle}>
+      <StateDefaultIconOnlyNo
+        navIcon="/nav-icon13.svg"
+        navTitle="Analytics"
+        chevronDown="/chevronup.svg"
+        dropdown
+        updateCount={false}
+        stateDefaultIconOnlyNoBackgroundColor="#f9fafb"
+        stateDefaultIconOnlyNoBorderRadius="8px"
+        stateDefaultIconOnlyNoBorder="1px solid #eaecf0"
+        stateDefaultIconOnlyNoPadding="6px 8px"
+        stateDefaultIconOnlyNoGap="8px"
+        titleWidth="200px"
+        titleGap="14px"
+        navIconWidth="28px"
+        navIconHeight="28px"
+        notificationsFontSize="14px"
+        updateCountBackgroundColor="#fcfcfd"
+        updateCountPadding="2px 4px"
+        divFontSize="14px"
+        divLineHeight="18px"
+        chevronDownIconWidth="24px"
+        chevronDownIconHeight="24px"
+      />
+      <div className="nav-dropdown">
+        <NavItemNavDropdownItem
+          members="Members"
+          navItemNavDropdownItemPadding="8px 92px 8px 65px"
+          navItemNavDropdownItemGap="7px"
+          frameDivWidth="20px"
+          frameDivHeight="20px"
+          frameDivBackgroundColor="#5925dc"
+          frameDivWidth1="8px"
+          frameDivHeight1="8px"
+          membersColor="#101828"
+          membersFontSize="14px"
+          membersLineHeight="18px"
+          membersWidth="117px"
+          membersFontWeight="unset"
         />
-      </div>
-      <div className="flex flex-col items-start justify-start">
-        <div
-          className="flex flex-row items-start justify-start py-2 pr-[92px] pl-[65px] gap-[7px]"
-          style={navItemNavDropdownItem3Style}
-        >
-          <div
-            className="relative w-5 h-5 overflow-hidden shrink-0"
-            style={frameDiv8Style}
-          >
-            <div
-              className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_4px)] rounded-sm bg-color-primary-700 w-2 h-2 overflow-hidden"
-              style={frameDiv9Style}
-            />
-          </div>
-          <div
-            className="relative leading-[18px] inline-block w-[117px] shrink-0"
-            style={members3Style}
-          >
-            Members
-          </div>
-        </div>
-        <div
-          className="flex flex-row items-start justify-start py-2 pr-[92px] pl-[65px] gap-[7px]"
-          style={navItemNavDropdownItem4Style}
-        >
-          <div
-            className="relative w-5 h-5 overflow-hidden shrink-0"
-            style={frameDiv10Style}
-          >
-            <div
-              className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_4px)] rounded-sm bg-color-primary-500 w-2 h-2 overflow-hidden"
-              style={frameDiv11Style}
-            />
-          </div>
-          <div
-            className="relative leading-[18px] inline-block w-[117px] shrink-0"
-            style={members4Style}
-          >
-            Messages
-          </div>
-        </div>
-        <div
-          className="flex flex-row items-start justify-start py-2 pr-[92px] pl-[65px] gap-[7px]"
-          style={navItemNavDropdownItem5Style}
-        >
-          <div
-            className="relative w-5 h-5 overflow-hidden shrink-0"
-            style={frameDiv12Style}
-          >
-            <div
-              className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_4px)] rounded-sm bg-color-primary-300 w-2 h-2 overflow-hidden"
-              style={frameDiv13Style}
-            />
-          </div>
-          <div
-            className="relative leading-[18px] inline-block w-[117px] shrink-0"
-            style={members5Style}
-          >
-            Topics
-          </div>
-        </div>
+        <NavItemNavDropdownItem
+          members="Messages"
+          navItemNavDropdownItemPadding="8px 92px 8px 65px"
+          navItemNavDropdownItemGap="7px"
+          frameDivWidth="20px"
+          frameDivHeight="20px"
+          frameDivBackgroundColor="#7a5af8"
+          frameDivWidth1="8px"
+          frameDivHeight1="8px"
+          membersColor="#101828"
+          membersFontSize="14px"
+          membersLineHeight="18px"
+          membersWidth="117px"
+          membersFontWeight="unset"
+        />
+        <NavItemNavDropdownItem
+          members="Topics"
+          navItemNavDropdownItemPadding="8px 92px 8px 65px"
+          navItemNavDropdownItemGap="7px"
+          frameDivWidth="20px"
+          frameDivHeight="20px"
+          frameDivBackgroundColor="#bdb4fe"
+          frameDivWidth1="8px"
+          frameDivHeight1="8px"
+          membersColor="#101828"
+          membersFontSize="14px"
+          membersLineHeight="18px"
+          membersWidth="117px"
+          membersFontWeight="unset"
+        />
       </div>
     </div>
   );

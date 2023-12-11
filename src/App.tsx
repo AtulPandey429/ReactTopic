@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Topics from "./pages/Topics";
+import Messages from "./pages/Messages";
 
 function App() {
   const action = useNavigationType();
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Topics />} />
+      <Route path="/" element={<Messages />} />
     </Routes>
   );
 }

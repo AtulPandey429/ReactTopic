@@ -1,0 +1,17 @@
+.italic-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.stateselected {
+  border-radius: 6px;
+  background-color: #f2f4f7;
+  border: 1px solid #eaecf0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}

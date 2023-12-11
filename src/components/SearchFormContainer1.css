@@ -1,0 +1,116 @@
+.frame-icon {
+  position: relative;
+  border-radius: 136.84px;
+  width: 1.63rem;
+  height: 1.63rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.jessica-felicia1 {
+  position: relative;
+  font-weight: 600;
+}
+.days-ago2 {
+  position: relative;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #98a2b3;
+}
+.jessica-felicia-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+.hello-everybody2 {
+  margin: 0;
+}
+.hello-everybody-i-container2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 1rem;
+  color: #667085;
+}
+.see-more {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+  color: #475467;
+}
+.frame-parent25 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+.button-group,
+.frame-parent23,
+.frame-parent24 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent24 {
+  flex: 1;
+  gap: 0.44rem;
+}
+.button-group,
+.frame-parent23 {
+  gap: 0.25rem;
+}
+.frame-parent23 {
+  align-self: stretch;
+  gap: 3.25rem;
+}
+.heart-icon2 {
+  width: 0.94rem;
+  height: 0.94rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div10,
+.heart-icon2 {
+  position: relative;
+}
+.like,
+.like-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.38rem;
+}
+.like-parent {
+  gap: 0.75rem;
+  transform: rotate(0.33deg);
+  transform-origin: 0 0;
+}
+.frame-parent22,
+.frame-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-wrapper {
+  flex-direction: row;
+  padding: 0 0 0 2.06rem;
+  transform: rotate(-0.33deg);
+  transform-origin: 0 0;
+  color: #667085;
+}
+.frame-parent22 {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #344054;
+  font-family: Inter;
+}

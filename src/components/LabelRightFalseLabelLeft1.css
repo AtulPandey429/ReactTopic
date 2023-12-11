@@ -1,0 +1,25 @@
+.div7 {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  flex-shrink: 0;
+}
+.label-rightfalse-label-left-child {
+  flex: 1;
+  position: relative;
+  border-top: 0.5px dashed #eaecf0;
+  box-sizing: border-box;
+  height: 0.5px;
+}
+.label-rightfalse-label-left1 {
+  width: 632px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  text-align: right;
+  font-size: 10px;
+  color: #98a2b3;
+  font-family: Inter;
+}

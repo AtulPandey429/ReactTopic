@@ -1,4 +1,9 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import Property1Details1 from "./Property1Details1";
+import FormContainer from "./FormContainer";
+import StateExtended from "./StateExtended";
+import Property1Details from "./Property1Details";
+import "./IconOnlyFalseDefaultFalse.css";
 
 type IconOnlyFalseDefaultFalseType = {
   logoIcon?: string;
@@ -12,8 +17,6 @@ type IconOnlyFalseDefaultFalseType = {
   navIcon5?: string;
   avatar?: string;
   logOut?: string;
-  updateCount?: boolean;
-  dropdown?: boolean;
 
   /** Style props */
   iconOnlyFalseDefaultFalseBorderRight?: CSSProperties["borderRight"];
@@ -82,6 +85,7 @@ type IconOnlyFalseDefaultFalseType = {
   membersFontSize1?: CSSProperties["fontSize"];
   membersLineHeight1?: CSSProperties["lineHeight"];
   membersWidth1?: CSSProperties["width"];
+  membersFontWeight?: CSSProperties["fontWeight"];
   navItemNavDropdownItemPadding2?: CSSProperties["padding"];
   navItemNavDropdownItemGap2?: CSSProperties["gap"];
   frameDivWidth4?: CSSProperties["width"];
@@ -91,7 +95,6 @@ type IconOnlyFalseDefaultFalseType = {
   membersFontSize2?: CSSProperties["fontSize"];
   membersLineHeight2?: CSSProperties["lineHeight"];
   membersWidth2?: CSSProperties["width"];
-  membersFontWeight?: CSSProperties["fontWeight"];
   navItemPadding2?: CSSProperties["padding"];
   navItemGap2?: CSSProperties["gap"];
   titleWidth2?: CSSProperties["width"];
@@ -235,6 +238,7 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
   membersFontSize1,
   membersLineHeight1,
   membersWidth1,
+  membersFontWeight,
   navItemNavDropdownItemPadding2,
   navItemNavDropdownItemGap2,
   frameDivWidth4,
@@ -244,7 +248,6 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
   membersFontSize2,
   membersLineHeight2,
   membersWidth2,
-  membersFontWeight,
   navItemPadding2,
   navItemGap2,
   titleWidth2,
@@ -306,8 +309,6 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
   eMailLineHeight,
   logOutIconWidth,
   logOutIconHeight,
-  updateCount,
-  dropdown,
 }) => {
   const iconOnlyFalseDefaultFalseStyle: CSSProperties = useMemo(() => {
     return {
@@ -339,7 +340,7 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [logoActionsGap]);
 
-  const logoStyle: CSSProperties = useMemo(() => {
+  const property1DetailsStyle: CSSProperties = useMemo(() => {
     return {
       width: logoWidth,
       padding: logoPadding,
@@ -360,7 +361,7 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [grovioFontSize]);
 
-  const exportStyle: CSSProperties = useMemo(() => {
+  const stateDefaultStyle: CSSProperties = useMemo(() => {
     return {
       top: exportTop,
       left: exportLeft,
@@ -368,7 +369,7 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [exportTop, exportLeft, exportPadding]);
 
-  const alignLeftIconStyle: CSSProperties = useMemo(() => {
+  const downloadIconStyle: CSSProperties = useMemo(() => {
     return {
       width: alignLeftIconWidth,
       height: alignLeftIconHeight,
@@ -430,14 +431,14 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [blankWidth, blankHeight]);
 
-  const navDropdownItemStyle: CSSProperties = useMemo(() => {
+  const stateExtendedStyle: CSSProperties = useMemo(() => {
     return {
       width: navDropdownItemWidth,
       gap: navDropdownItemGap,
     };
   }, [navDropdownItemWidth, navDropdownItemGap]);
 
-  const navItem1Style: CSSProperties = useMemo(() => {
+  const stateDefaultIconOnlyNoStyle: CSSProperties = useMemo(() => {
     return {
       padding: navItemPadding1,
       gap: navItemGap1,
@@ -477,7 +478,7 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [divFontSize1, divLineHeight1]);
 
-  const chevronUpIconStyle: CSSProperties = useMemo(() => {
+  const chevronDownIconStyle: CSSProperties = useMemo(() => {
     return {
       width: chevronUpIconWidth,
       height: chevronUpIconHeight,
@@ -513,160 +514,160 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [membersFontSize, membersLineHeight, membersWidth]);
 
-  const navItemNavDropdownItem1Style: CSSProperties = useMemo(() => {
+  const navItemNavDropdownItemStyle1: CSSProperties = useMemo(() => {
     return {
       padding: navItemNavDropdownItemPadding1,
       gap: navItemNavDropdownItemGap1,
     };
   }, [navItemNavDropdownItemPadding1, navItemNavDropdownItemGap1]);
 
-  const frameDiv2Style: CSSProperties = useMemo(() => {
+  const frameDivStyle1: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth2,
       height: frameDivHeight2,
     };
   }, [frameDivWidth2, frameDivHeight2]);
 
-  const frameDiv3Style: CSSProperties = useMemo(() => {
+  const frameDiv1Style1: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth3,
       height: frameDivHeight3,
     };
   }, [frameDivWidth3, frameDivHeight3]);
 
-  const members1Style: CSSProperties = useMemo(() => {
+  const membersStyle1: CSSProperties = useMemo(() => {
     return {
       fontSize: membersFontSize1,
       lineHeight: membersLineHeight1,
       width: membersWidth1,
+      fontWeight: membersFontWeight,
     };
-  }, [membersFontSize1, membersLineHeight1, membersWidth1]);
+  }, [membersFontSize1, membersLineHeight1, membersWidth1, membersFontWeight]);
 
-  const navItemNavDropdownItem2Style: CSSProperties = useMemo(() => {
+  const navItemNavDropdownItemStyle2: CSSProperties = useMemo(() => {
     return {
       padding: navItemNavDropdownItemPadding2,
       gap: navItemNavDropdownItemGap2,
     };
   }, [navItemNavDropdownItemPadding2, navItemNavDropdownItemGap2]);
 
-  const frameDiv4Style: CSSProperties = useMemo(() => {
+  const frameDivStyle2: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth4,
       height: frameDivHeight4,
     };
   }, [frameDivWidth4, frameDivHeight4]);
 
-  const frameDiv5Style: CSSProperties = useMemo(() => {
+  const frameDiv1Style2: CSSProperties = useMemo(() => {
     return {
       width: frameDivWidth5,
       height: frameDivHeight5,
     };
   }, [frameDivWidth5, frameDivHeight5]);
 
-  const members2Style: CSSProperties = useMemo(() => {
+  const membersStyle2: CSSProperties = useMemo(() => {
     return {
       fontSize: membersFontSize2,
       lineHeight: membersLineHeight2,
       width: membersWidth2,
-      fontWeight: membersFontWeight,
     };
-  }, [membersFontSize2, membersLineHeight2, membersWidth2, membersFontWeight]);
+  }, [membersFontSize2, membersLineHeight2, membersWidth2]);
 
-  const navItem2Style: CSSProperties = useMemo(() => {
+  const navItemStyle1: CSSProperties = useMemo(() => {
     return {
       padding: navItemPadding2,
       gap: navItemGap2,
     };
   }, [navItemPadding2, navItemGap2]);
 
-  const title2Style: CSSProperties = useMemo(() => {
+  const titleStyle1: CSSProperties = useMemo(() => {
     return {
       width: titleWidth2,
       gap: titleGap2,
     };
   }, [titleWidth2, titleGap2]);
 
-  const navIcon2Style: CSSProperties = useMemo(() => {
+  const navIconStyle1: CSSProperties = useMemo(() => {
     return {
       width: navIconWidth2,
       height: navIconHeight2,
     };
   }, [navIconWidth2, navIconHeight2]);
 
-  const notifications2Style: CSSProperties = useMemo(() => {
+  const notificationsStyle1: CSSProperties = useMemo(() => {
     return {
       fontSize: notificationsFontSize2,
     };
   }, [notificationsFontSize2]);
 
-  const updateCount2Style: CSSProperties = useMemo(() => {
+  const updateCountStyle1: CSSProperties = useMemo(() => {
     return {
       padding: updateCountPadding2,
     };
   }, [updateCountPadding2]);
 
-  const div2Style: CSSProperties = useMemo(() => {
+  const divStyle1: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize2,
       lineHeight: divLineHeight2,
     };
   }, [divFontSize2, divLineHeight2]);
 
-  const blank1Style: CSSProperties = useMemo(() => {
+  const blankStyle1: CSSProperties = useMemo(() => {
     return {
       width: blankWidth1,
       height: blankHeight1,
     };
   }, [blankWidth1, blankHeight1]);
 
-  const navItem3Style: CSSProperties = useMemo(() => {
+  const navItemStyle2: CSSProperties = useMemo(() => {
     return {
       padding: navItemPadding3,
       gap: navItemGap3,
     };
   }, [navItemPadding3, navItemGap3]);
 
-  const title3Style: CSSProperties = useMemo(() => {
+  const titleStyle2: CSSProperties = useMemo(() => {
     return {
       width: titleWidth3,
       gap: titleGap3,
     };
   }, [titleWidth3, titleGap3]);
 
-  const navIcon3Style: CSSProperties = useMemo(() => {
+  const navIconStyle2: CSSProperties = useMemo(() => {
     return {
       width: navIconWidth3,
       height: navIconHeight3,
     };
   }, [navIconWidth3, navIconHeight3]);
 
-  const notifications3Style: CSSProperties = useMemo(() => {
+  const notificationsStyle2: CSSProperties = useMemo(() => {
     return {
       fontSize: notificationsFontSize3,
     };
   }, [notificationsFontSize3]);
 
-  const updateCount3Style: CSSProperties = useMemo(() => {
+  const updateCountStyle2: CSSProperties = useMemo(() => {
     return {
       padding: updateCountPadding3,
     };
   }, [updateCountPadding3]);
 
-  const div3Style: CSSProperties = useMemo(() => {
+  const divStyle2: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize3,
       lineHeight: divLineHeight3,
     };
   }, [divFontSize3, divLineHeight3]);
 
-  const blank2Style: CSSProperties = useMemo(() => {
+  const blankStyle2: CSSProperties = useMemo(() => {
     return {
       width: blankWidth2,
       height: blankHeight2,
     };
   }, [blankWidth2, blankHeight2]);
 
-  const navItem4Style: CSSProperties = useMemo(() => {
+  const navItemStyle3: CSSProperties = useMemo(() => {
     return {
       width: navItemWidth1,
       padding: navItemPadding4,
@@ -674,94 +675,94 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [navItemWidth1, navItemPadding4, navItemGap4]);
 
-  const title4Style: CSSProperties = useMemo(() => {
+  const titleStyle3: CSSProperties = useMemo(() => {
     return {
       width: titleWidth4,
       gap: titleGap4,
     };
   }, [titleWidth4, titleGap4]);
 
-  const navIcon4Style: CSSProperties = useMemo(() => {
+  const navIconStyle3: CSSProperties = useMemo(() => {
     return {
       width: navIconWidth4,
       height: navIconHeight4,
     };
   }, [navIconWidth4, navIconHeight4]);
 
-  const notifications4Style: CSSProperties = useMemo(() => {
+  const notificationsStyle3: CSSProperties = useMemo(() => {
     return {
       fontSize: notificationsFontSize4,
     };
   }, [notificationsFontSize4]);
 
-  const updateCount4Style: CSSProperties = useMemo(() => {
+  const updateCountStyle3: CSSProperties = useMemo(() => {
     return {
       padding: updateCountPadding4,
     };
   }, [updateCountPadding4]);
 
-  const div4Style: CSSProperties = useMemo(() => {
+  const divStyle3: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize4,
       lineHeight: divLineHeight4,
     };
   }, [divFontSize4, divLineHeight4]);
 
-  const blank3Style: CSSProperties = useMemo(() => {
+  const blankStyle3: CSSProperties = useMemo(() => {
     return {
       width: blankWidth3,
       height: blankHeight3,
     };
   }, [blankWidth3, blankHeight3]);
 
-  const navItem5Style: CSSProperties = useMemo(() => {
+  const navItemStyle4: CSSProperties = useMemo(() => {
     return {
       padding: navItemPadding5,
       gap: navItemGap5,
     };
   }, [navItemPadding5, navItemGap5]);
 
-  const title5Style: CSSProperties = useMemo(() => {
+  const titleStyle4: CSSProperties = useMemo(() => {
     return {
       width: titleWidth5,
       gap: titleGap5,
     };
   }, [titleWidth5, titleGap5]);
 
-  const navIcon5Style: CSSProperties = useMemo(() => {
+  const navIconStyle4: CSSProperties = useMemo(() => {
     return {
       width: navIconWidth5,
       height: navIconHeight5,
     };
   }, [navIconWidth5, navIconHeight5]);
 
-  const notifications5Style: CSSProperties = useMemo(() => {
+  const notificationsStyle4: CSSProperties = useMemo(() => {
     return {
       fontSize: notificationsFontSize5,
     };
   }, [notificationsFontSize5]);
 
-  const updateCount5Style: CSSProperties = useMemo(() => {
+  const updateCountStyle4: CSSProperties = useMemo(() => {
     return {
       padding: updateCountPadding5,
     };
   }, [updateCountPadding5]);
 
-  const div5Style: CSSProperties = useMemo(() => {
+  const divStyle4: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize5,
       lineHeight: divLineHeight5,
     };
   }, [divFontSize5, divLineHeight5]);
 
-  const blank4Style: CSSProperties = useMemo(() => {
+  const blankStyle4: CSSProperties = useMemo(() => {
     return {
       width: blankWidth4,
       height: blankHeight4,
     };
   }, [blankWidth4, blankHeight4]);
 
-  const profileStyle: CSSProperties = useMemo(() => {
+  const property1Details1Style: CSSProperties = useMemo(() => {
     return {
       width: profileWidth,
       padding: profilePadding,
@@ -769,7 +770,7 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
     };
   }, [profileWidth, profilePadding, profileGap]);
 
-  const frameDiv6Style: CSSProperties = useMemo(() => {
+  const frameDiv2Style: CSSProperties = useMemo(() => {
     return {
       gap: frameDivGap,
     };
@@ -810,361 +811,190 @@ const IconOnlyFalseDefaultFalse: FunctionComponent<
 
   return (
     <div
-      className="bg-base-white box-border h-[940.64px] flex flex-col items-start justify-between p-4 text-left text-[27.89px] text-colors-text-title-primary-text font-raleway border-r-[1px] border-solid border-colors-border-radius-primary-border-radius"
+      className="icon-onlyfalse-defaultfalse"
       style={iconOnlyFalseDefaultFalseStyle}
     >
-      <div
-        className="h-[678.64px] flex flex-col items-start justify-between"
-        style={containerStyle}
-      >
-        <div
-          className="flex flex-col items-start justify-start gap-[24px]"
-          style={logoActionsStyle}
-        >
-          <div
-            className="bg-base-white w-64 flex flex-row items-center justify-start py-3 px-spacing-space-8 box-border relative gap-[12px]"
-            style={logoStyle}
-          >
-            <img
-              className="relative rounded-[7.97px] w-[39.84px] h-[39.84px] overflow-hidden shrink-0 z-[0]"
-              alt=""
-              src={logoIcon}
-              style={logoIconStyle}
-            />
-            <div className="relative font-extrabold z-[1]" style={grovioStyle}>
-              Grovio
-            </div>
-            <div
-              className="my-0 mx-[!important] absolute top-[19.92px] left-[224px] rounded-border-radius-radius-6 bg-base-white flex flex-row items-start justify-start p-1.5 z-[2] border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-              style={exportStyle}
-            >
-              <img
-                className="relative w-3 h-3 overflow-hidden shrink-0"
-                alt=""
-                src={alignLeft}
-                style={alignLeftIconStyle}
-              />
-            </div>
-          </div>
-          <div
-            className="w-64 flex flex-col items-start justify-start gap-[4px] text-sm text-colors-text-title-secondary-text font-inter-body-14-semibold"
-            style={actionsStyle}
-          >
-            <div
-              className="bg-base-white w-64 flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 box-border gap-[8px]"
-              style={navItemStyle}
-            >
-              <div
-                className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-                style={titleStyle}
-              >
-                <img
-                  className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-                  alt=""
-                  src={navIcon}
-                  style={navIconStyle}
-                />
-                <div
-                  className="relative font-medium"
-                  style={notificationsStyle}
-                >
-                  Home
-                </div>
-              </div>
-              <div
-                className="rounded-border-radius-radius-6 bg-color-gray-50 hidden flex-col items-start justify-start py-0.5 px-1 border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                style={updateCountStyle}
-              >
-                <div className="relative leading-[18px]" style={divStyle}>
-                  10
-                </div>
-              </div>
-              <div
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                style={blankStyle}
-              />
-            </div>
-            <div
-              className="w-64 flex flex-col items-start justify-start gap-[6px] text-colors-text-title-primary-text"
-              style={navDropdownItemStyle}
-            >
-              <div
-                className="rounded-border-radius-radius-8 bg-color-gray-50 flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 gap-[8px] border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                style={navItem1Style}
-              >
-                <div
-                  className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-                  style={title1Style}
-                >
-                  <img
-                    className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-                    alt=""
-                    src={navIcon1}
-                    style={navIcon1Style}
-                  />
-                  <div
-                    className="relative font-medium"
-                    style={notifications1Style}
-                  >
-                    Analytics
-                  </div>
-                </div>
-                <div
-                  className="rounded-border-radius-radius-6 bg-color-gray-25 hidden flex-col items-start justify-start py-0.5 px-1 text-colors-text-title-secondary-text border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                  style={updateCount1Style}
-                >
-                  <div className="relative leading-[18px]" style={div1Style}>
-                    10
-                  </div>
-                </div>
-                <img
-                  className="relative w-6 h-6 overflow-hidden shrink-0"
-                  alt=""
-                  src={chevronUp}
-                  style={chevronUpIconStyle}
-                />
-              </div>
-              <div className="flex flex-col items-start justify-start text-colors-text-title-secondary-text">
-                <div
-                  className="flex flex-row items-start justify-start py-2 pr-[92px] pl-[65px] gap-[7px]"
-                  style={navItemNavDropdownItemStyle}
-                >
-                  <div
-                    className="relative w-5 h-5 overflow-hidden shrink-0"
-                    style={frameDivStyle}
-                  >
-                    <div
-                      className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_4px)] rounded-sm bg-color-primary-700 w-2 h-2 overflow-hidden"
-                      style={frameDiv1Style}
-                    />
-                  </div>
-                  <div
-                    className="relative leading-[18px] inline-block w-[117px] shrink-0"
-                    style={membersStyle}
-                  >
-                    Members
-                  </div>
-                </div>
-                <div
-                  className="flex flex-row items-start justify-start py-2 pr-[92px] pl-[65px] gap-[7px]"
-                  style={navItemNavDropdownItem1Style}
-                >
-                  <div
-                    className="relative w-5 h-5 overflow-hidden shrink-0"
-                    style={frameDiv2Style}
-                  >
-                    <div
-                      className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_4px)] rounded-sm bg-color-primary-500 w-2 h-2 overflow-hidden"
-                      style={frameDiv3Style}
-                    />
-                  </div>
-                  <div
-                    className="relative leading-[18px] inline-block w-[117px] shrink-0"
-                    style={members1Style}
-                  >
-                    Messages
-                  </div>
-                </div>
-                <div
-                  className="flex flex-row items-start justify-start py-2 pr-[92px] pl-[65px] gap-[7px]"
-                  style={navItemNavDropdownItem2Style}
-                >
-                  <div
-                    className="relative w-5 h-5 overflow-hidden shrink-0"
-                    style={frameDiv4Style}
-                  >
-                    <div
-                      className="absolute top-[calc(50%_-_4px)] left-[calc(50%_-_4px)] rounded-sm bg-color-primary-300 w-2 h-2 overflow-hidden"
-                      style={frameDiv5Style}
-                    />
-                  </div>
-                  <div
-                    className="relative leading-[18px] inline-block w-[117px] shrink-0"
-                    style={members2Style}
-                  >
-                    Topics
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="bg-base-white flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 gap-[8px]"
-              style={navItem2Style}
-            >
-              <div
-                className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-                style={title2Style}
-              >
-                <img
-                  className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-                  alt=""
-                  src={navIcon2}
-                  style={navIcon2Style}
-                />
-                <div
-                  className="relative font-medium"
-                  style={notifications2Style}
-                >
-                  Communities
-                </div>
-              </div>
-              <div
-                className="rounded-border-radius-radius-6 bg-color-gray-50 hidden flex-col items-start justify-start py-0.5 px-1 border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                style={updateCount2Style}
-              >
-                <div className="relative leading-[18px]" style={div2Style}>
-                  10
-                </div>
-              </div>
-              <div
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                style={blank1Style}
-              />
-            </div>
-            <div
-              className="bg-base-white flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 gap-[8px]"
-              style={navItem3Style}
-            >
-              <div
-                className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-                style={title3Style}
-              >
-                <img
-                  className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-                  alt=""
-                  src={navIcon3}
-                  style={navIcon3Style}
-                />
-                <div
-                  className="relative font-medium"
-                  style={notifications3Style}
-                >
-                  Campaigns
-                </div>
-              </div>
-              <div
-                className="rounded-border-radius-radius-6 bg-color-gray-50 hidden flex-col items-start justify-start py-0.5 px-1 border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                style={updateCount3Style}
-              >
-                <div className="relative leading-[18px]" style={div3Style}>
-                  10
-                </div>
-              </div>
-              <div
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                style={blank2Style}
-              />
-            </div>
-            <div
-              className="bg-base-white w-64 flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 box-border gap-[8px]"
-              style={navItem4Style}
-            >
-              <div
-                className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-                style={title4Style}
-              >
-                <img
-                  className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-                  alt=""
-                  src={navIcon4}
-                  style={navIcon4Style}
-                />
-                <div
-                  className="relative font-medium"
-                  style={notifications4Style}
-                >
-                  Notifications
-                </div>
-              </div>
-              <div
-                className="rounded-border-radius-radius-6 bg-color-gray-50 flex flex-col items-start justify-start py-0.5 px-1 border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                style={updateCount4Style}
-              >
-                <div className="relative leading-[18px]" style={div4Style}>
-                  10
-                </div>
-              </div>
-              <div
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                style={blank3Style}
-              />
-            </div>
-            <div
-              className="bg-base-white flex flex-row items-center justify-start py-spacing-space-6 px-spacing-space-8 gap-[8px]"
-              style={navItem5Style}
-            >
-              <div
-                className="w-[200px] flex flex-row items-center justify-start gap-[14px]"
-                style={title5Style}
-              >
-                <img
-                  className="relative rounded-border-radius-radius-6 w-7 h-7 overflow-hidden shrink-0"
-                  alt=""
-                  src={navIcon5}
-                  style={navIcon5Style}
-                />
-                <div
-                  className="relative font-medium"
-                  style={notifications5Style}
-                >
-                  Settings
-                </div>
-              </div>
-              <div
-                className="rounded-border-radius-radius-6 bg-color-gray-50 hidden flex-col items-start justify-start py-0.5 px-1 border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-                style={updateCount5Style}
-              >
-                <div className="relative leading-[18px]" style={div5Style}>
-                  10
-                </div>
-              </div>
-              <div
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                style={blank4Style}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="rounded-border-radius-radius-16 bg-base-white box-border w-64 flex flex-row items-center justify-start p-4 gap-[24px] text-sm font-inter-body-14-semibold border-[1px] border-solid border-colors-border-radius-primary-border-radius"
-        style={profileStyle}
-      >
-        <div
-          className="flex flex-row items-center justify-start gap-[8px]"
-          style={frameDiv6Style}
-        >
-          <img
-            className="relative rounded-[10.32px] w-[42px] h-[42px] object-cover"
-            alt=""
-            src={avatar}
-            style={avatarIconStyle}
+      <div className="container" style={containerStyle}>
+        <div className="logo-actions" style={logoActionsStyle}>
+          <Property1Details1
+            logoIcon="/logo-icon1.svg"
+            alignLeft="/alignleft1.svg"
+            property1DetailsWidth="256px"
+            property1DetailsPadding="12px 8px"
+            property1DetailsGap="12px"
+            logoIconWidth="39.84px"
+            logoIconHeight="39.84px"
+            grovioFontSize="27.89px"
+            exportTop="19.92px"
+            exportLeft="224px"
+            exportPadding="6px"
+            alignLeftIconWidth="12px"
+            alignLeftIconHeight="12px"
           />
-          <div
-            className="flex flex-col items-start justify-start gap-[4px]"
-            style={nameEmailStyle}
-          >
-            <div
-              className="self-stretch relative font-medium"
-              style={nameStyle}
-            >
-              Jack Finnigan
-            </div>
-            <div
-              className="self-stretch relative text-xs leading-[16px] text-colors-text-body-primary-text overflow-hidden text-ellipsis whitespace-nowrap"
-              style={eMailStyle}
-            >
-              jackfinnigan@grovio.x..
-            </div>
+          <div className="actions" style={actionsStyle}>
+            <FormContainer
+              navIconImage="/nav-icon6.svg"
+              pageTitle="Home"
+              dropdown
+              updateCount={false}
+              propPadding="6px 8px"
+              propGap="8px"
+              propWidth="256px"
+              propWidth1="200px"
+              propGap1="14px"
+              propWidth2="28px"
+              propHeight="28px"
+              propFontSize="14px"
+              propPadding1="2px 4px"
+              propFontSize1="14px"
+              propLineHeight="18px"
+              propWidth3="24px"
+              propHeight1="24px"
+            />
+            <StateExtended
+              navIcon="/nav-icon7.svg"
+              chevronUp="/chevronup1.svg"
+              stateExtendedWidth="256px"
+              stateExtendedGap="6px"
+              navItemPadding="6px 8px"
+              navItemGap="8px"
+              titleWidth="200px"
+              titleGap="14px"
+              navIconWidth="28px"
+              navIconHeight="28px"
+              notificationsFontSize="14px"
+              updateCountPadding="2px 4px"
+              divFontSize="14px"
+              divLineHeight="18px"
+              chevronUpIconWidth="24px"
+              chevronUpIconHeight="24px"
+              navItemNavDropdownItemPadding="8px 92px 8px 65px"
+              navItemNavDropdownItemGap="7px"
+              frameDivWidth="20px"
+              frameDivHeight="20px"
+              frameDivWidth1="8px"
+              frameDivHeight1="8px"
+              membersColor="#344054"
+              membersFontSize="14px"
+              membersLineHeight="18px"
+              membersWidth="117px"
+              navItemNavDropdownItemPadding1="8px 92px 8px 65px"
+              navItemNavDropdownItemGap1="7px"
+              frameDivWidth2="20px"
+              frameDivHeight2="20px"
+              frameDivWidth3="8px"
+              frameDivHeight3="8px"
+              membersColor1="#344054"
+              membersFontSize1="14px"
+              membersLineHeight1="18px"
+              membersWidth1="117px"
+              membersFontWeight="unset"
+              navItemNavDropdownItemPadding2="8px 92px 8px 65px"
+              navItemNavDropdownItemGap2="7px"
+              frameDivWidth4="20px"
+              frameDivHeight4="20px"
+              frameDivWidth5="8px"
+              frameDivHeight5="8px"
+              membersColor2="#344054"
+              membersFontSize2="14px"
+              membersLineHeight2="18px"
+              membersWidth2="117px"
+            />
+            <FormContainer
+              navIconImage="/nav-icon8.svg"
+              pageTitle="Communities"
+              dropdown
+              updateCount={false}
+              propPadding="6px 8px"
+              propGap="8px"
+              propWidth="unset"
+              propWidth1="200px"
+              propGap1="14px"
+              propWidth2="28px"
+              propHeight="28px"
+              propFontSize="14px"
+              propPadding1="2px 4px"
+              propFontSize1="14px"
+              propLineHeight="18px"
+              propWidth3="24px"
+              propHeight1="24px"
+            />
+            <FormContainer
+              navIconImage="/nav-icon9.svg"
+              pageTitle="Campaigns"
+              dropdown
+              updateCount={false}
+              propPadding="6px 8px"
+              propGap="8px"
+              propWidth="unset"
+              propWidth1="200px"
+              propGap1="14px"
+              propWidth2="28px"
+              propHeight="28px"
+              propFontSize="14px"
+              propPadding1="2px 4px"
+              propFontSize1="14px"
+              propLineHeight="18px"
+              propWidth3="24px"
+              propHeight1="24px"
+            />
+            <FormContainer
+              navIconImage="/nav-icon10.svg"
+              pageTitle="Notifications"
+              dropdown
+              updateCount
+              propPadding="6px 8px"
+              propGap="8px"
+              propWidth="256px"
+              propWidth1="200px"
+              propGap1="14px"
+              propWidth2="28px"
+              propHeight="28px"
+              propFontSize="14px"
+              propPadding1="2px 4px"
+              propFontSize1="14px"
+              propLineHeight="18px"
+              propWidth3="24px"
+              propHeight1="24px"
+            />
+            <FormContainer
+              navIconImage="/nav-icon11.svg"
+              pageTitle="Settings"
+              dropdown
+              updateCount={false}
+              propPadding="6px 8px"
+              propGap="8px"
+              propWidth="unset"
+              propWidth1="200px"
+              propGap1="14px"
+              propWidth2="28px"
+              propHeight="28px"
+              propFontSize="14px"
+              propPadding1="2px 4px"
+              propFontSize1="14px"
+              propLineHeight="18px"
+              propWidth3="24px"
+              propHeight1="24px"
+            />
           </div>
         </div>
-        <img
-          className="relative w-[17px] h-[17px] overflow-hidden shrink-0"
-          alt=""
-          src={logOut}
-          style={logOutIconStyle}
-        />
       </div>
+      <Property1Details
+        avatar="/avatar1@2x.png"
+        logOut="/logout.svg"
+        property1DetailsWidth="256px"
+        property1DetailsPadding="16px"
+        property1DetailsGap="24px"
+        frameDivGap="8px"
+        avatarIconWidth="42px"
+        avatarIconHeight="42px"
+        nameEmailGap="4px"
+        nameFontSize="14px"
+        eMailFontSize="12px"
+        eMailLineHeight="16px"
+        logOutIconWidth="17px"
+        logOutIconHeight="17px"
+      />
     </div>
   );
 };

@@ -1,0 +1,30 @@
+.logo-icon {
+  position: relative;
+  border-radius: 7.97px;
+  width: 39.84px;
+  height: 39.84px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.grovio {
+  position: relative;
+  font-weight: 800;
+  z-index: 1;
+}
+.property-1details1 {
+  background-color: #fff;
+  width: 256px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 8px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 12px;
+  text-align: left;
+  font-size: 27.89px;
+  color: #101828;
+  font-family: Raleway;
+}

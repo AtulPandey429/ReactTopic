@@ -1,9 +1,11 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import LabelRightFalseLabelLeft1 from "./LabelRightFalseLabelLeft1";
+import "./LabelRightFalseLabelLeft.css";
 
 type LabelRightFalseLabelLeftType = {
   /** Style props */
   labelRightFalseLabelLeftHeight?: CSSProperties["height"];
-  labelRightFalseLabelLeftWidth?: CSSProperties["width"];
+  labelRightFalseLabelLeftAlignSelf?: CSSProperties["alignSelf"];
   yAxisLineWidth?: CSSProperties["width"];
   yAxisLineGap?: CSSProperties["gap"];
   yAxisLineAlignSelf?: CSSProperties["alignSelf"];
@@ -46,7 +48,7 @@ const LabelRightFalseLabelLeft: FunctionComponent<
   LabelRightFalseLabelLeftType
 > = ({
   labelRightFalseLabelLeftHeight,
-  labelRightFalseLabelLeftWidth,
+  labelRightFalseLabelLeftAlignSelf,
   yAxisLineWidth,
   yAxisLineGap,
   yAxisLineAlignSelf,
@@ -87,11 +89,11 @@ const LabelRightFalseLabelLeft: FunctionComponent<
   const labelRightFalseLabelLeftStyle: CSSProperties = useMemo(() => {
     return {
       height: labelRightFalseLabelLeftHeight,
-      width: labelRightFalseLabelLeftWidth,
+      alignSelf: labelRightFalseLabelLeftAlignSelf,
     };
-  }, [labelRightFalseLabelLeftHeight, labelRightFalseLabelLeftWidth]);
+  }, [labelRightFalseLabelLeftHeight, labelRightFalseLabelLeftAlignSelf]);
 
-  const yAxisLineStyle: CSSProperties = useMemo(() => {
+  const labelRightFalseLabelLeft1Style: CSSProperties = useMemo(() => {
     return {
       width: yAxisLineWidth,
       gap: yAxisLineGap,
@@ -99,7 +101,7 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [yAxisLineWidth, yAxisLineGap, yAxisLineAlignSelf]);
 
-  const div7Style: CSSProperties = useMemo(() => {
+  const div6Style: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize,
       width: divWidth,
@@ -112,7 +114,7 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [lineDivHeight]);
 
-  const yAxisLine1Style: CSSProperties = useMemo(() => {
+  const labelRightFalseLabelLeft1Style1: CSSProperties = useMemo(() => {
     return {
       width: yAxisLineWidth1,
       gap: yAxisLineGap1,
@@ -120,20 +122,20 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [yAxisLineWidth1, yAxisLineGap1, yAxisLineAlignSelf1]);
 
-  const div8Style: CSSProperties = useMemo(() => {
+  const div6Style1: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize1,
       width: divWidth1,
     };
   }, [divFontSize1, divWidth1]);
 
-  const lineDiv1Style: CSSProperties = useMemo(() => {
+  const lineDivStyle1: CSSProperties = useMemo(() => {
     return {
       height: lineDivHeight1,
     };
   }, [lineDivHeight1]);
 
-  const yAxisLine2Style: CSSProperties = useMemo(() => {
+  const labelRightFalseLabelLeft1Style2: CSSProperties = useMemo(() => {
     return {
       width: yAxisLineWidth2,
       gap: yAxisLineGap2,
@@ -141,20 +143,20 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [yAxisLineWidth2, yAxisLineGap2, yAxisLineAlignSelf2]);
 
-  const div9Style: CSSProperties = useMemo(() => {
+  const div6Style2: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize2,
       width: divWidth2,
     };
   }, [divFontSize2, divWidth2]);
 
-  const lineDiv2Style: CSSProperties = useMemo(() => {
+  const lineDivStyle2: CSSProperties = useMemo(() => {
     return {
       height: lineDivHeight2,
     };
   }, [lineDivHeight2]);
 
-  const yAxisLine3Style: CSSProperties = useMemo(() => {
+  const labelRightFalseLabelLeft1Style3: CSSProperties = useMemo(() => {
     return {
       width: yAxisLineWidth3,
       gap: yAxisLineGap3,
@@ -162,20 +164,20 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [yAxisLineWidth3, yAxisLineGap3, yAxisLineAlignSelf3]);
 
-  const div10Style: CSSProperties = useMemo(() => {
+  const div6Style3: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize3,
       width: divWidth3,
     };
   }, [divFontSize3, divWidth3]);
 
-  const lineDiv3Style: CSSProperties = useMemo(() => {
+  const lineDivStyle3: CSSProperties = useMemo(() => {
     return {
       height: lineDivHeight3,
     };
   }, [lineDivHeight3]);
 
-  const yAxisLine4Style: CSSProperties = useMemo(() => {
+  const labelRightFalseLabelLeft1Style4: CSSProperties = useMemo(() => {
     return {
       width: yAxisLineWidth4,
       gap: yAxisLineGap4,
@@ -183,20 +185,20 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [yAxisLineWidth4, yAxisLineGap4, yAxisLineAlignSelf4]);
 
-  const div11Style: CSSProperties = useMemo(() => {
+  const div6Style4: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize4,
       width: divWidth4,
     };
   }, [divFontSize4, divWidth4]);
 
-  const lineDiv4Style: CSSProperties = useMemo(() => {
+  const lineDivStyle4: CSSProperties = useMemo(() => {
     return {
       height: lineDivHeight4,
     };
   }, [lineDivHeight4]);
 
-  const yAxisLine5Style: CSSProperties = useMemo(() => {
+  const labelRightFalseLabelLeft1Style5: CSSProperties = useMemo(() => {
     return {
       width: yAxisLineWidth5,
       gap: yAxisLineGap5,
@@ -204,14 +206,14 @@ const LabelRightFalseLabelLeft: FunctionComponent<
     };
   }, [yAxisLineWidth5, yAxisLineGap5, yAxisLineAlignSelf5]);
 
-  const div12Style: CSSProperties = useMemo(() => {
+  const div6Style5: CSSProperties = useMemo(() => {
     return {
       fontSize: divFontSize5,
       width: divWidth5,
     };
   }, [divFontSize5, divWidth5]);
 
-  const lineDiv5Style: CSSProperties = useMemo(() => {
+  const lineDivStyle5: CSSProperties = useMemo(() => {
     return {
       height: lineDivHeight5,
     };
@@ -219,99 +221,69 @@ const LabelRightFalseLabelLeft: FunctionComponent<
 
   return (
     <div
-      className="h-[149px] flex flex-col items-start justify-between text-right text-3xs text-gray-400 font-inter-body-14-semibold"
+      className="label-rightfalse-label-left"
       style={labelRightFalseLabelLeftStyle}
     >
-      <div
-        className="w-[632px] flex flex-row items-center justify-start gap-[8px]"
-        style={yAxisLineStyle}
-      >
-        <div
-          className="relative inline-block w-[26px] shrink-0"
-          style={div7Style}
-        >
-          100%
-        </div>
-        <div
-          className="flex-1 relative box-border h-[0.5px] border-t-[0.5px] border-dashed border-colors-border-radius-primary-border-radius"
-          style={lineDivStyle}
-        />
-      </div>
-      <div
-        className="w-[632px] flex flex-row items-center justify-start gap-[8px]"
-        style={yAxisLine1Style}
-      >
-        <div
-          className="relative inline-block w-[26px] shrink-0"
-          style={div8Style}
-        >
-          80%
-        </div>
-        <div
-          className="flex-1 relative box-border h-[0.5px] border-t-[0.5px] border-dashed border-colors-border-radius-primary-border-radius"
-          style={lineDiv1Style}
-        />
-      </div>
-      <div
-        className="w-[632px] flex flex-row items-center justify-start gap-[8px]"
-        style={yAxisLine2Style}
-      >
-        <div
-          className="relative inline-block w-[26px] shrink-0"
-          style={div9Style}
-        >
-          60%
-        </div>
-        <div
-          className="flex-1 relative box-border h-[0.5px] border-t-[0.5px] border-dashed border-colors-border-radius-primary-border-radius"
-          style={lineDiv2Style}
-        />
-      </div>
-      <div
-        className="w-[632px] flex flex-row items-center justify-start gap-[8px]"
-        style={yAxisLine3Style}
-      >
-        <div
-          className="relative inline-block w-[26px] shrink-0"
-          style={div10Style}
-        >
-          40%
-        </div>
-        <div
-          className="flex-1 relative box-border h-[0.5px] border-t-[0.5px] border-dashed border-colors-border-radius-primary-border-radius"
-          style={lineDiv3Style}
-        />
-      </div>
-      <div
-        className="w-[632px] flex flex-row items-center justify-start gap-[8px]"
-        style={yAxisLine4Style}
-      >
-        <div
-          className="relative inline-block w-[26px] shrink-0"
-          style={div11Style}
-        >
-          20%
-        </div>
-        <div
-          className="flex-1 relative box-border h-[0.5px] border-t-[0.5px] border-dashed border-colors-border-radius-primary-border-radius"
-          style={lineDiv4Style}
-        />
-      </div>
-      <div
-        className="w-[632px] flex flex-row items-center justify-start gap-[8px]"
-        style={yAxisLine5Style}
-      >
-        <div
-          className="relative inline-block w-[26px] shrink-0"
-          style={div12Style}
-        >
-          0%
-        </div>
-        <div
-          className="flex-1 relative box-border h-[0.5px] border-t-[0.5px] border-solid border-colors-border-radius-primary-border-radius"
-          style={lineDiv5Style}
-        />
-      </div>
+      <LabelRightFalseLabelLeft1
+        prop="100%"
+        labelRightFalseLabelLeftWidth="632px"
+        labelRightFalseLabelLeftGap="8px"
+        labelRightFalseLabelLeftAlignSelf="unset"
+        divFontSize="10px"
+        divWidth="26px"
+        lineDivBorderTop="0.5px dashed #eaecf0"
+        lineDivHeight="0.5px"
+      />
+      <LabelRightFalseLabelLeft1
+        prop="80%"
+        labelRightFalseLabelLeftWidth="632px"
+        labelRightFalseLabelLeftGap="8px"
+        labelRightFalseLabelLeftAlignSelf="unset"
+        divFontSize="10px"
+        divWidth="26px"
+        lineDivBorderTop="0.5px dashed #eaecf0"
+        lineDivHeight="0.5px"
+      />
+      <LabelRightFalseLabelLeft1
+        prop="60%"
+        labelRightFalseLabelLeftWidth="632px"
+        labelRightFalseLabelLeftGap="8px"
+        labelRightFalseLabelLeftAlignSelf="unset"
+        divFontSize="10px"
+        divWidth="26px"
+        lineDivBorderTop="0.5px dashed #eaecf0"
+        lineDivHeight="0.5px"
+      />
+      <LabelRightFalseLabelLeft1
+        prop="40%"
+        labelRightFalseLabelLeftWidth="632px"
+        labelRightFalseLabelLeftGap="8px"
+        labelRightFalseLabelLeftAlignSelf="unset"
+        divFontSize="10px"
+        divWidth="26px"
+        lineDivBorderTop="0.5px dashed #eaecf0"
+        lineDivHeight="0.5px"
+      />
+      <LabelRightFalseLabelLeft1
+        prop="20%"
+        labelRightFalseLabelLeftWidth="632px"
+        labelRightFalseLabelLeftGap="8px"
+        labelRightFalseLabelLeftAlignSelf="unset"
+        divFontSize="10px"
+        divWidth="26px"
+        lineDivBorderTop="0.5px dashed #eaecf0"
+        lineDivHeight="0.5px"
+      />
+      <LabelRightFalseLabelLeft1
+        prop="0%"
+        labelRightFalseLabelLeftWidth="632px"
+        labelRightFalseLabelLeftGap="8px"
+        labelRightFalseLabelLeftAlignSelf="unset"
+        divFontSize="10px"
+        divWidth="26px"
+        lineDivBorderTop="0.5px solid #eaecf0"
+        lineDivHeight="0.5px"
+      />
     </div>
   );
 };

@@ -1,0 +1,18 @@
+.member {
+  position: relative;
+  line-height: 18px;
+}
+.typetitle {
+  background-color: #fff;
+  width: 202px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 14px;
+  color: #667085;
+  font-family: Inter;
+}

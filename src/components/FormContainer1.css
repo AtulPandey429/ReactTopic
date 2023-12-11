@@ -1,0 +1,131 @@
+.frame-wrapper1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-child4 {
+  position: relative;
+  border-radius: 136.84px;
+  width: 1.63rem;
+  height: 1.63rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.reena {
+  position: relative;
+  font-weight: 600;
+}
+.days-ago3 {
+  position: relative;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #98a2b3;
+}
+.reena-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.hello-everybody3 {
+  margin: 0;
+}
+.hello-everybody-i-container3 {
+  align-self: stretch;
+  position: relative;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #667085;
+}
+.frame-parent29 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+.bold-parent,
+.button-frame,
+.frame-parent27,
+.frame-parent28 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent28 {
+  flex-direction: row;
+  padding: 0 0 0 2.06rem;
+  gap: 0.44rem;
+}
+.bold-parent,
+.button-frame,
+.frame-parent27 {
+  flex-direction: column;
+}
+.frame-parent27 {
+  gap: 1rem;
+}
+.bold-parent,
+.button-frame {
+  padding: 0 0 0 4.13rem;
+}
+.bold-parent {
+  border-radius: 12px 12px 0 0;
+  background-color: #fcfcfd;
+  border: 1px solid #eaecf0;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  gap: 0.88rem;
+}
+.write-your-reply {
+  align-self: stretch;
+  position: relative;
+  line-height: 1rem;
+}
+.write-your-reply-parent {
+  align-self: stretch;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+  border: 1px solid #eaecf0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.75rem 1rem 1rem;
+  gap: 2.5rem;
+  margin-top: -0.06rem;
+}
+.frame-parent26,
+.frame-parent30 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent30 {
+  align-self: stretch;
+  padding: 0 0 0 4.13rem;
+  font-size: 0.75rem;
+  color: #667085;
+}
+.frame-parent26 {
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  width: 66.81rem;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: left;
+  font-size: 0.88rem;
+  color: #344054;
+  font-family: Inter;
+}

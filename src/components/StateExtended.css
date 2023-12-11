@@ -1,0 +1,10 @@
+.nav-dropdown,
+.stateextended {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.stateextended {
+  gap: 6px;
+}

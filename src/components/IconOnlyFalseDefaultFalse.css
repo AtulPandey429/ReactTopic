@@ -1,0 +1,29 @@
+.actions {
+  width: 256px;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.actions,
+.container,
+.icon-onlyfalse-defaultfalse,
+.logo-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logo-actions {
+  justify-content: flex-start;
+  gap: 24px;
+}
+.container,
+.icon-onlyfalse-defaultfalse {
+  height: 678.64px;
+  justify-content: space-between;
+}
+.icon-onlyfalse-defaultfalse {
+  background-color: #fff;
+  border-right: 1px solid #eaecf0;
+  box-sizing: border-box;
+  height: 940.64px;
+  padding: 16px;
+}

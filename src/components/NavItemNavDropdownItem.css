@@ -1,0 +1,36 @@
+.frame-inner {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 4px);
+  border-radius: 2px;
+  background-color: #5925dc;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+.nav-itemnav-dropdown-item-inner {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.members {
+  position: relative;
+  line-height: 18px;
+  display: inline-block;
+  width: 117px;
+  flex-shrink: 0;
+}
+.nav-itemnav-dropdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 92px 8px 65px;
+  gap: 7px;
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+  font-family: Inter;
+}
